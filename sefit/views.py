@@ -1,3 +1,13 @@
-from django.shortcuts import render
+from rest_framework.views import APIView
+from rest_framework import generics
 
-# Create your views here.
+from .models import Servidor
+from .serializers import ServidorSerializer
+
+
+
+
+class ServidorAPIView(generics.ListCreateAPIView):
+    queryset = Servidor.objects.all()
+    serializer_class = ServidorSerializer
+    

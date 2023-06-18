@@ -1,0 +1,14 @@
+GET http://127.0.0.1:8000/api_v1/servidor/
+Content-Type: application/json
+
+###
+
+POST http://127.0.0.1:8000/api_v1/servidor/
+Content-Type: application/json
+
+{
+	"mat": 365100,
+	"nome": "Servidor Anônimo 2",
+	"sexo": "f",
+	"email": "anonimo_2@gmail.com"
+}
