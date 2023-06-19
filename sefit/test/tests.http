@@ -1,14 +1,34 @@
 GET http://127.0.0.1:8000/api_v1/servidor/
 Content-Type: application/json
-
+###
+GET http://127.0.0.1:8000/api_v1/roteiro/
+Content-Type: application/json
+###
+GET http://127.0.0.1:8000/api_v1/afastamento/
+Content-Type: application/json
+###
+GET http://127.0.0.1:8000/api_v1/permuta/
+Content-Type: application/json
+###
+GET http://127.0.0.1:8000/api_v1/permuta_not/
+Content-Type: application/json
+###
+GET http://127.0.0.1:8000/api_v1/permuta_fds/
+Content-Type: application/json
+###
+GET http://127.0.0.1:8000/api_v1/permuta_sem/
+Content-Type: application/json
+###
+GET http://127.0.0.1:8000/api_v1/permutaByTp/tp=fds
+Content-Type: application/json
 ###
 
 POST http://127.0.0.1:8000/api_v1/servidor/
 Content-Type: application/json
 
 {
-	"mat": 365100,
-	"nome": "Servidor Anônimo 2",
-	"sexo": "f",
-	"email": "anonimo_2@gmail.com"
+	"mat": 365101,
+	"nome": "Carlos Anônimo 3",
+	"sexo": "m",
+	"email": "carlosanonimo_2@gmail.com"
 }
