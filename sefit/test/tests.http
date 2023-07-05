@@ -10,6 +10,9 @@ Content-Type: application/json
 GET http://127.0.0.1:8000/api_v1/permuta/
 Content-Type: application/json
 ###
+GET http://127.0.0.1:8000/api_v1/permuta/fds
+Content-Type: application/json
+###
 GET http://127.0.0.1:8000/api_v1/permuta_not/
 Content-Type: application/json
 ###
@@ -17,9 +20,6 @@ GET http://127.0.0.1:8000/api_v1/permuta_fds/
 Content-Type: application/json
 ###
 GET http://127.0.0.1:8000/api_v1/permuta_sem/
-Content-Type: application/json
-###
-GET http://127.0.0.1:8000/api_v1/permutaByTp/tp=fds
 Content-Type: application/json
 ###
 

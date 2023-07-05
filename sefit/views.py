@@ -22,18 +22,6 @@ class PermutaAPIView(generics.ListCreateAPIView):
     queryset = Permuta.objects.all()
     serializer_class = PermutaSerializer
 
-class Tp_noturnoAPIView(generics.ListCreateAPIView):
-    queryset = Tp_noturno.objects.all()
-    serializer_class = Tp_noturnoSerializer
-
-class Tp_fdsAPIView(generics.ListCreateAPIView):
-    queryset = Tp_fds.objects.all()
-    serializer_class = Tp_fdsSerializer
-
-class Tp_semanalAPIView(generics.ListCreateAPIView):
-    queryset = Tp_semanal.objects.all()
-    serializer_class = Tp_semanalSerializer
-
 
 class PermutaByTpAPIView(APIView):
     def get(self, request, tp):
