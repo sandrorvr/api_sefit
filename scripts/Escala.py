@@ -14,17 +14,18 @@ class Schedule:
         return math.sqrt(x2+y2)
     
     def rangeWorker(self, point):
-        return [ self.length(point, p) for p in self.listOfWorker]
+        arr = [self.length(point, wk.getQrf()) for wk in self.listOfWorker]
+        return sorted(arr, reverse=False)
 
 
 if __name__ == '__main__':
-    s1 = Servidor('sandro', 1).setQRF((3,3))
-    s2 = Servidor('sandro', 1).setQRF((10,10))
-    s3 = Servidor('sandro', 1).setQRF((15,15))
+    s1 = Servidor('sandro', 1)
+    s1.setQRF('ondina')
+    s2 = Servidor('sandro', 1)
+    s2.setQRF('barra')
 
     esc = Schedule()
     esc.setWorker(s1)
     esc.setWorker(s2)
-    esc.setWorker(s3)
 
-    print(esc.rangeWorker(Point(2,2)))
+    print(esc.rangeWorker(Point(10,10)))
